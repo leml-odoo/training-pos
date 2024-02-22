@@ -2,7 +2,7 @@
 <templates id="template" xml:space="preserve">
     <t t-inherit="point_of_sale.ProductsWidget" t-inherit-mode="extension">
         <xpath expr="//ProductCard" position="attributes">
-            <attribute name="available_quantity">product.available_quantity</attribute>
+            <attribute name="available_quantity">product.available_quantity - (product.offset || 0)</attribute>
         </xpath>
     </t>
 </templates>
