@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../versions/17.0"
+		}
+	],
+	"settings": {
+		"python.languageServer": "None"
+	}
+}
