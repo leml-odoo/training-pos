@@ -5,8 +5,8 @@
         and enables an auto update for the value on a defined interval
     ''',
     'license': 'OPL-1',
-    'author': 'Leonardo Medina Lozano',
-    'maintainer': 'Leonardo Medina Lozano',
+    'author': 'LEML-JLOM-RALB',
+    'maintainer': 'LEML-JLOM-RALB',
     'website': '',
     'category': 'Point of Sale',
     'version': '1.0.0',
