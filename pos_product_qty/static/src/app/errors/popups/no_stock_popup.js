@@ -11,7 +11,6 @@ export class NoStockPopup extends AbstractAwaitablePopup {
         confirmText: _t("Continue"),
         cancelText: _t("Return"),
         title: _t('No stock!'),
-        cancelKey: false,
         sound: true,
     };
 
@@ -19,7 +18,6 @@ export class NoStockPopup extends AbstractAwaitablePopup {
         super.setup();
         onMounted(this.onMounted);
         this.sound = useService("sound");
-        this.validateOrder = this.props.validateOrder;
         this.body1 = _t(
             "There is no stock of the product%s:", 
             this.props.productNames.length == 1 ? '' : 's'
@@ -33,8 +31,4 @@ export class NoStockPopup extends AbstractAwaitablePopup {
         }
     }
 
-    confirm() {
-        super.cancel()
-        this.validateOrder();
-    }
 }
