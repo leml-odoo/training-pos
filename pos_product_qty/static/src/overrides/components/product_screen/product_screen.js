@@ -8,10 +8,9 @@ patch(ProductScreen.prototype, {
         const result = super.updateSelectedOrderline(...arguments);
         const order = this.pos.get_order();
         const selectedLine = order.get_selected_orderline();
-        if (!selectedLine) {
-            return result;
+        if (selectedLine) {
+            selectedLine.product.offset = buffer;
         }
-        selectedLine.product.offset = buffer;
         return result;
     },
 });
